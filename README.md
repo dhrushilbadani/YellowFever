@@ -22,12 +22,12 @@ I then used the [numpy](http://www.numpy.org/) and [matplotlib] (http://matplotl
     "Yellowness" in this case is a simple measure of the disproportion in coverage given by (no. of articles on Indrani Mukerjea) / (no. of articles on Hardik Patel). A higher "yellowness" indicates higher disproportionality in coverage. If the yellowness < 1, it means there have been more articles on Hardik Patel and the Gujarat protests than on Indrani Mukerjea, as is the case with the Indian Express (IE) in the figure above. 
 
 ##Usage##
-    git remote add yellow https://github.com/dhrushilbadani/YellowFever.git
-    git pull yellow master
-    cd YellowFever
+1. Download the .zip file from the pane on the right >> , and extract its contents.
+2. Run YellowFever:
+```
     python YellowFever.py
-Type the above in your command prompt (this is just pulling from Github and running YellowFever.py). If you don't have git, you can download YellowFever [here.](https://drive.google.com/folderview?id=0B5m6Gta_VsE5c2pJcGtnZzFSOEU&usp=sharing)
-**Note:** The code is written for Python 2.7. Please make the necessary changes, if any, for other versions. You will also need [Beautiful Soup](https://pypi.python.org/pypi/beautifulsoup4), [numpy](http://www.numpy.org/) and [matplotlib] (http://matplotlib.org/) to run this.
+```
+**Note:** The code is written for Python 2.7. Please make necessary changes, if any, for other versions. You will also need [Beautiful Soup](https://pypi.python.org/pypi/beautifulsoup4), [numpy](http://www.numpy.org/) and [matplotlib] (http://matplotlib.org/) to run this.
 
 ##Certain Notes w.r.t. the data scraped:##
 * I had to skip the Times of India (TOI) because of a very weirdly structured search functionality. Run a search on ‘indrani mukerjea’ and you'll find the following the search navigation bar on the bottom won't let you go beyond 10. But if you manipulate the URL, you can go beyond it. In fact, choosing a high enough number like 100 returns absolutely irrelevant news. Let me know if you've found a way to scrape TOI.
